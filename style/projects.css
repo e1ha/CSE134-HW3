@@ -1,0 +1,29 @@
+body {
+    margin: 0px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto 100px auto 100px;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: -1; 
+}
+  
+nav > a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 20px 15px 15px 20px;
+}
+  
+nav > a:hover {
+    background-color: gray;
+}
+
+#last-nav-item {
+    margin-right: 25px;
+}

@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto 100px auto 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: -1; 
+}
+  
+nav > a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 20px 15px 15px 20px;
+}
+  
+nav > a:hover {
+    background-color: gray;
+}
+
+#last-nav-item {
+    margin-right: 25px;
+}
+
+main {
+    border-radius: 12px;
+    background-color: white;
+    grid-area: main;
+    width: 60ch;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    padding: 20px;
+    border: solid black;
+    text-align: center;
+}
+
+picture > source, picture>img {
+    width: 50%;
+    height: 40%;
+}
+
+main > p {
+    text-align: left;
+    margin-top: 20px;
+}
+
+main > button {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-btn {
+    margin-right: 25px;
+    margin-bottom: 0px;
+}
+
+/* main > h1 {
+    grid-area: heading; 
+}
+
+main > picture {
+    grid-area: image;
+}
+
+main > p {
+    grid-area: description;
+}
+
+main > button {
+    grid-area: buttons;
+} */
+
+/* footer {
+    background-color: black;
+    grid-area: footer;
+}
+
+footer > a {
+    padding: 20px 15px 15px 20px;
+} */
