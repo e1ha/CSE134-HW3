@@ -86,13 +86,17 @@ picture > source, picture>img {
     height: 40%;
 }
 
-a > button {
+button {
     /* rounded buttons */
     border-radius: 20px;
     padding: 10px;
     width: 100px;
     background-color: var(--button-color);
+}
+
+button > a {
     color: var(--button-font-color);
+    text-decoration: none;
 }
 
 main > p {
@@ -115,7 +119,7 @@ main > p {
         text-align: center;
     }
 
-    a > button {
+    button > a {
         padding: 5px 10px;
     }
 
