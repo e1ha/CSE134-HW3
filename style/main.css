@@ -22,8 +22,6 @@ body {
 }
 
 /* laptop */
-@media only screen and (min-width: 801px) {
-
     nav {
         background-color: var(--navbar-color);
         grid-column-start: 1;
@@ -107,7 +105,6 @@ body {
     #contact-btn {
         margin-right: 40px;
     }
-}
 
 /* tablet */
 @media only screen and (max-width: 800px) {
