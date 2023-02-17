@@ -17,25 +17,34 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
     background-color: var(--navbar-color);
     grid-column-start: 1;
     grid-column-end: -1; 
 }
-  
-nav > a {
-    text-decoration: none;
-    -color: white;
+
+#hamburger-items {
     display: flex;
-    padding: 20px 15px 15px 20px;
+    justify-content: flex-end;
+}
+
+#hamburger-items > a {
+    text-decoration: none;
+    padding: 20px 25px 25px 20px;
     color: var(--navbar-font-color);
     transition: transform 1s;
 }
   
-nav > a:hover {
+#hamburger-items > a:hover {
     background-color: var(--background-color);
     transform: scale(1.15,1.15);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger {
+    display: none;
 }
 
 #last-nav-item {
@@ -89,4 +98,30 @@ section > p {
         width: 90vw;
         margin: 5vw;
     }
+}
+
+@media only screen and (max-width: 350px) {
+    #hamburger-items > a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        transition: none;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+        padding: 20px 0px 20px 25px;
+    }
+
+    #hamburger-items { 
+        display: none;
+    }
+
+    #hamburger-items > a:hover {
+        transform: none;
+    }
+    nav input:checked ~ #hamburger-items { 
+        display: block; 
+    }
+
 }

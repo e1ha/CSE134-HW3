@@ -15,11 +15,22 @@
 
 <body>
     <nav>
-        <picture> <img src="images/hamburger-icon.png" alt="hamburger menu"/> </picture>
-        <a href="#">About</a>
-        <a href="./projects.html">Projects</a>
-        <a id="last-nav-item" href="./contact.html">Contact</a>
+        <label for="hamburger">
+        <svg id=hamburger-menu fill="white" viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </label>
+        <input type="checkbox" id="hamburger">
+        
+        <div id="hamburger-items">
+            <a href="#">About</a>
+            <a href="./projects.html">Projects</a>
+            <a id="last-nav-item" href="./contact.html">Contact</a>
+        </div>
     </nav>
+    
     <main>
         <h1>Hi! I'm Elaine...</h1>
         <picture>
