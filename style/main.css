@@ -86,15 +86,12 @@ picture > source, picture>img {
     height: 40%;
 }
 
-button {
+main > a {
     /* rounded buttons */
     border-radius: 20px;
     padding: 10px;
     width: 100px;
     background-color: var(--button-color);
-}
-
-button > a {
     color: var(--button-font-color);
     text-decoration: none;
 }
