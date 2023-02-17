@@ -21,6 +21,7 @@ body {
     font-family: var(--font);
 }
 
+@media only screen and (min-width: 801px) {
 /* nav bar starts */
 nav {
     background-color: var(--navbar-color);
@@ -114,8 +115,9 @@ textarea {
     background-color: var(--button-color);
     color: var(--button-font-color);
 }
-
-@media only screen and (max-width: 700px) {
+}
+/* tablet */
+@media only screen and (max-width: 800px) {
     body {
         display: block;
     }
@@ -141,7 +143,8 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 350px) {
+/* phones */
+@media only screen and (max-width: 450px) {
     #hamburger-items > a {
         box-sizing: border-box;
         display: block;
